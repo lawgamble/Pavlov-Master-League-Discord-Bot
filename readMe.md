@@ -56,20 +56,20 @@ Here is the format of the .json file that this bot needs in order to work proper
 
 # H2 Bot commands
 
-!register <inGameName>
+!register [inGameName]
 Registers the player in the "players" object, adding "q-" for quest specific player.
 
 !unregister 
 Removes author's name from the "players" object - including any team player was associated with.
 
-!createteam <teamName>
-Creates a new Key, value pair in the "teams" object. The initial value of the new <teamName> key is set to an empty array.
+!createteam [teamName]
+Creates a new Key, value pair in the "teams" object. The initial value of the new [teamName] key is set to an empty array.
 
-!removeteam <teamName>
+!removeteam [teamName]
 Removes team key and all associated values  from the "teams" object.
 
-!addplayer <teamName> <@discordName>
-Pushes a value to the <teamName> key if player is registered and is not already on another roster.
+!addplayer [teamName] [@discordName]
+Pushes a value to the [teamName] key if player is registered and is not already on another roster.
 
-!removeplayer <teamName> <@discordName>
-Removes player from roster of associated <teamName> key --- only if they are on specified <teamName> roster.
+!removeplayer [teamName] [@discordName]
+Removes player from roster of associated [teamName] key --- only if they are on specified [teamName] roster.
